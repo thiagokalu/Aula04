@@ -8,15 +8,17 @@ public class Contador {
 		// TODO Auto-generated method stub
 
 		Scanner leitor = new Scanner (System.in); 
-		String senhadigitada;
-		senhadigitada = leitor.next();
-		System.out.println("Qual é a resposta para a vida, o universo e tudo mais?");
+
+		int senhadigitada=0;
 		
-		while(senhadigitada != "42") {
-			
-			leitor.close();
+		while(senhadigitada != 42) {
+			System.out.println("Qual é a resposta para a vida, o universo e tudo mais?");
+			senhadigitada = leitor.nextInt();
+		
 			
 		}
+		System.out.println("Você acertou! Parabéns!");
+		leitor.close();
 	}
 
 }
